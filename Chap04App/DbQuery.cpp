@@ -2,7 +2,7 @@
 
 class DBQuery {
 	static int hCon;
-	int nresult;
+	int nResult;
 public:
 	DBQuery() {};
 	static void DBConnect(const char* Server, const char* ID, const char* Pass);
@@ -32,7 +32,7 @@ bool DBQuery::RunQuery(const char* SQL)
 
 int main()
 {
-	DBQuery::DBConnect("", "root", "mysql_p@ssw0rd");
+	DBQuery::DBConnect(" ", "root", "mysql_p@ssw0rd");
 	DBQuery Q1, Q2, Q3;
 
 	Q1.RunQuery("SELECT * FROM usertbl WHERE userID = 'KBS';");
